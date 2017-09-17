@@ -1,0 +1,7 @@
+1x in file A
+2x in file A
+2x in file A
+1x in file A and 1x in file B = 2x
+1x in file A and 2x in file B = 3x
+2x in file A and 1x in file B = 3x
+2x in file A and 1x in file B = 3x
