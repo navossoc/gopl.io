@@ -7,3 +7,5 @@
 **Exercício 1.3:** Experimente medir a diferença de tempo de execução entre nossas versões potencialmente ineficientes e a versão que usa `strings.Join`. (A seção 1.6 mostra parte do pacote `time`, e a seção 11.4 mostra como escrever testes comparativos para uma avaliação sistemática de desempenho.)
 
 **Exercício 1.4:** Modifique `dup2` para que exiba os nomes de todos os arquivos em que cada linha duplicada ocorre.
+
+**Exercício 1.5:** Altere a paleta de cores do programa Lissajous para verde sobre preto, para maior autenticidade. Para criar a cor web `#RRGGBB`, use `color.RGBA{0xRR, 0xGG, 0xBB, 0xff}`, em que cada par de dígitos hexadecimais representa a intensidade do componente vermelho, verde ou azul do pixel.
