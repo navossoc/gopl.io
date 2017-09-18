@@ -13,3 +13,5 @@
 **Exercício 1.6:** Modifique o programa Lissajous para gerar imagens em várias cores adicionando mais valores a `palette` para então exibi-las alterando o terceiro argumento de `SetColorIndex` de alguma maneira interessante.
 
 **Exercício 1.7:** A chamada de função `io.Copy(dst, src)` lê de `src` e escreve em `dst`. Use-a no lugar de `ioutil.ReadAll` para copiar o corpo da resposta para `os.Stdout` sem exigir um buffer grande o suficiente para armazenar todo o stream. Não se esqueça de verificar o resultado de erro de `io.Copy`.
+
+**Exercício 1.8:** Modifique `fetch` para que o prefixo `http://` seja acrescentado a cada URL de argumento, caso esteja faltando. Você pode usar `strings.HasPrefix`.
