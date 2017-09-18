@@ -19,3 +19,5 @@
 **Exercício 1.9:** Modifique `fetch` para exibir também o código de status HTTP encontrado em `resp.Status`.
 
 **Exercício 1.10:** Encontre um site que gere uma grande quantidade de dados. Investigue o caching executando `fetchall` duas vezes sucessivamente para ver se o tempo informado sofre muita alteração. Você sempre obtém o mesmo conteúdo? Modifique `fetchall` para exibir sua saída em um arquivo para que ela possa ser examinada.
+
+**Exercício 1.11:** Experimente usar `fetchall` com listas mais longas de argumentos, por exemplo, amostras de sites disponíveis em `alexa.com` que fazem parte do primeiro milhão (top million). Como o programa se comporta se um site simplesmente não responder? (A seção 8.9 descreve maneiras de lidar com esses casos.)
