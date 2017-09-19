@@ -21,3 +21,5 @@
 **Exercício 1.10:** Encontre um site que gere uma grande quantidade de dados. Investigue o caching executando `fetchall` duas vezes sucessivamente para ver se o tempo informado sofre muita alteração. Você sempre obtém o mesmo conteúdo? Modifique `fetchall` para exibir sua saída em um arquivo para que ela possa ser examinada.
 
 **Exercício 1.11:** Experimente usar `fetchall` com listas mais longas de argumentos, por exemplo, amostras de sites disponíveis em `alexa.com` que fazem parte do primeiro milhão (top million). Como o programa se comporta se um site simplesmente não responder? (A seção 8.9 descreve maneiras de lidar com esses casos.)
+
+**Exercício 1.12:** Modifique o servidor Lissajous para ler valores de parâmetros do URL. Por exemplo, você pode organizá-lo de modo que um URL como http://localhost:8000/?cycles=20 defina o número de ciclos para 20, em vez de usar o default igual a 5. Utilize a função `strconv.Atoi` para converter o parâmetro do tipo string em um inteiro. Você pode ver a documentação da função usando `go doc strconv.Atoi`.
