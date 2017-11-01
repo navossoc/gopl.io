@@ -33,3 +33,5 @@
 **Exercício 2.3:** Reescreva `PopCount` para que use um loop no lugar de uma expressão única. Compare o desempenho das duas versões. (A seção 11.4 mostra como comparar o desempenho de diferentes implementações de forma sistemática.)
 
 **Exercício 2.4:** Escreva uma versão de `PopCount` que conte bits deslocando seu argumento pelas 64 posições dos bits, testando o bit mais à direita a cada vez. Compare seu desempenho com a versão que faz consultas na tabela.
+
+**Exercício 2.5:** A expressão `x&(x-1)` limpa o bit diferente de zero mais à direita de x. Escreva uma versão de `PopCount`que conte bits usando esse fato e avalie seu desempenho.
