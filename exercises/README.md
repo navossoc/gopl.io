@@ -31,3 +31,5 @@
 **Exercício 2.2:** Escreva um programa de conversão de unidades de propósito geral, análogo ao `cf`, que leia números de seus argumentos de linha de comando ou da entrada-padrão se não houver argumentos, e converta cada número em unidades como temperatura em Celsius e em Fahrenheit, comprimento em pés e metros, peso em libras e quilogramas e operações semelhantes.
 
 **Exercício 2.3:** Reescreva `PopCount` para que use um loop no lugar de uma expressão única. Compare o desempenho das duas versões. (A seção 11.4 mostra como comparar o desempenho de diferentes implementações de forma sistemática.)
+
+**Exercício 2.4:** Escreva uma versão de `PopCount` que conte bits deslocando seu argumento pelas 64 posições dos bits, testando o bit mais à direita a cada vez. Compare seu desempenho com a versão que faz consultas na tabela.
