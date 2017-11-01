@@ -23,3 +23,7 @@
 **Exercício 1.11:** Experimente usar `fetchall` com listas mais longas de argumentos, por exemplo, amostras de sites disponíveis em `alexa.com` que fazem parte do primeiro milhão (top million). Como o programa se comporta se um site simplesmente não responder? (A seção 8.9 descreve maneiras de lidar com esses casos.)
 
 **Exercício 1.12:** Modifique o servidor Lissajous para ler valores de parâmetros do URL. Por exemplo, você pode organizá-lo de modo que um URL como http://localhost:8000/?cycles=20 defina o número de ciclos para 20, em vez de usar o default igual a 5. Utilize a função `strconv.Atoi` para converter o parâmetro do tipo string em um inteiro. Você pode ver a documentação da função usando `go doc strconv.Atoi`.
+
+----------
+
+**Exercício 2.1:** Acrescente tipos, constantes e funções em `tempconv` para processar temperaturas na escala Kelvin, em que zero Kelvin corresponde a -273,15 °C e uma diferença de 1 K tem a mesma magnitude de 1 °C.
