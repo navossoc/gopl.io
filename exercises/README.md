@@ -29,3 +29,5 @@
 **Exercício 2.1:** Acrescente tipos, constantes e funções em `tempconv` para processar temperaturas na escala Kelvin, em que zero Kelvin corresponde a -273,15 °C e uma diferença de 1 K tem a mesma magnitude de 1 °C.
 
 **Exercício 2.2:** Escreva um programa de conversão de unidades de propósito geral, análogo ao `cf`, que leia números de seus argumentos de linha de comando ou da entrada-padrão se não houver argumentos, e converta cada número em unidades como temperatura em Celsius e em Fahrenheit, comprimento em pés e metros, peso em libras e quilogramas e operações semelhantes.
+
+**Exercício 2.3:** Reescreva `PopCount` para que use um loop no lugar de uma expressão única. Compare o desempenho das duas versões. (A seção 11.4 mostra como comparar o desempenho de diferentes implementações de forma sistemática.)
