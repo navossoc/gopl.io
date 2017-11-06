@@ -35,3 +35,7 @@
 **Exercício 2.4:** Escreva uma versão de `PopCount` que conte bits deslocando seu argumento pelas 64 posições dos bits, testando o bit mais à direita a cada vez. Compare seu desempenho com a versão que faz consultas na tabela.
 
 **Exercício 2.5:** A expressão `x&(x-1)` limpa o bit diferente de zero mais à direita de x. Escreva uma versão de `PopCount`que conte bits usando esse fato e avalie seu desempenho.
+
+----------
+
+**Exercício 3.1:** Se a função f devolver um valor `float64` não finito, o arquivo SVG conterá elementos `<polygon>` inválidos (embora muitos renderizadores SVG tratem essa situação com elegância). Modifique o programa para ignorar polígonos inválidos que forem gerados.
