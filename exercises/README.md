@@ -41,3 +41,5 @@
 **Exercício 3.1:** Se a função f devolver um valor `float64` não finito, o arquivo SVG conterá elementos `<polygon>` inválidos (embora muitos renderizadores SVG tratem essa situação com elegância). Modifique o programa para ignorar polígonos inválidos que forem gerados.
 
 **Exercício 3.2:** Faça experimentos com visualizações de outras funções do pacote `math`. Você pode gerar padrões como caixa de ovo, morrinhos (moguls) ou uma sela?
+
+**Exercício 3.3:** Pinte cada polígono de acordo com sua altura, de modo que os picos tenham a cor vermelha (#ff0000) e os vales sejam azuis (#0000ff).
