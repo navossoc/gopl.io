@@ -49,3 +49,5 @@
 ```go
 w.Header().Set("Content-Type", "image/svg+xml")
 ```
+
+**Exercício 3.5:** Implemente o conjunto de Mandelbrot todo colorido usando a função `image.NewRGBA` e o tipo `color.RGBA` ou `color.YCbCr`.
