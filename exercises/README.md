@@ -43,3 +43,9 @@
 **Exercício 3.2:** Faça experimentos com visualizações de outras funções do pacote `math`. Você pode gerar padrões como caixa de ovo, morrinhos (moguls) ou uma sela?
 
 **Exercício 3.3:** Pinte cada polígono de acordo com sua altura, de modo que os picos tenham a cor vermelha (#ff0000) e os vales sejam azuis (#0000ff).
+
+**Exercício 3.4:** Seguindo a abordagem do exemplo Lissajous na seção 1.7, crie um servidor web que calcule superfícies e escreva dados SVG ao cliente. O servidor deve definir o cabeçalho `Content-Type` assim:
+
+```go
+w.Header().Set("Content-Type", "image/svg+xml")
+```
