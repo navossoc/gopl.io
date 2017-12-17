@@ -53,3 +53,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 3.5:** Implemente o conjunto de Mandelbrot todo colorido usando a função `image.NewRGBA` e o tipo `color.RGBA` ou `color.YCbCr`.
 
 **Exercício 3.6:** Superamostragem (supersampling) é uma técnica para reduzir o efeito de *pixelation*, calculando o valor da cor em vários pontos em cada pixel e tirando a média. O método mais simples é dividir cada pixel em quatro "subpixels". Implemente isso.
+
+**Exercício 3.7:** Outro fractal simples usa o método de Newton para encontrar soluções complexas a uma função como z⁴-1 = 0. Sombreie cada ponto de partida de acordo com o número de iterações necessárias para se aproximar de uma das quatro raízes. Pinte cada ponto segundo a raiz da qual ele se aproxima.
