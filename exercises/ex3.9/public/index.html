@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mandelbrot fractal</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/imgareaselect-default.css" />
+    <script type="text/javascript" src="/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.imgareaselect.min.js"></script>
+    <script type="text/javascript">
+        var canvas = {};
+        var canvasId = "#fractal";
+
+        function changeFractal() {
+            canvas = {
+                width: parseInt($("#width").val()),
+                height: parseInt($("#height").val()),
+                xmin: parseInt($("#xmin").val()),
+                ymin: parseInt($("#ymin").val()),
+                xmax: parseInt($("#xmax").val()),
+                ymax: parseInt($("#ymax").val()),
+            }
+            
+            $(canvasId).width(canvas.width).height(canvas.height).attr("src", "/fractal?" + $.param(canvas));
+        }
+
+        $(document).ready(function () {
+            // default settings
+            changeFractal();
+
+            $(canvasId).imgAreaSelect({
+                aspectRatio: '1:1',
+                autoHide: true,
+                fadeSpeed: 200,
+                onSelectEnd: function (img, selection) {
+                    if (selection.width == 0 || selection.height == 0) {
+                        return;
+                    }
+
+                    canvas = params = {
+                        width: img.width, height: img.height,
+                        xmin: mapRange([0, img.width], [canvas.xmin, canvas.xmax], selection.x1),
+                        ymin: mapRange([0, img.height], [canvas.ymin, canvas.ymax], selection.y1),
+                        xmax: mapRange([0, img.width], [canvas.xmin, canvas.xmax], selection.x2),
+                        ymax: mapRange([0, img.height], [canvas.ymin, canvas.ymax], selection.y2),
+                    };
+
+                    $(canvasId).attr("src", "/fractal?" + $.param(params));
+                }
+            });
+        });
+
+        function mapRange(from, to, s) {
+            return to[0] + (s - from[0]) * (to[1] - to[0]) / (from[1] - from[0]);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="column" style="text-align: center">
+                <h1>Mandelbrot fractal</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-80" style="text-align: center">
+                <img src="#" width="512" height="512" alt="Mandelbrot fractal" id="fractal" />
+            </div>
+            <div class="column column-20">
+                <form action="#" onsubmit="changeFractal()">
+                    <fieldset>
+                        <label for="width">Width:</label>
+                        <input type="text" placeholder="512" value="512" id="width">
+                        <label for="height">Height:</label>
+                        <input type="text" placeholder="512" value="512" id="height">
+                        <label for="xmin">xMin:</label>
+                        <input type="text" placeholder="-2" value="-2" id="xmin">
+                        <label for="ymin">yMin:</label>
+                        <input type="text" placeholder="-2" value="-2" id="ymin">
+                        <label for="xmax">xMax:</label>
+                        <input type="text" placeholder="2" value="2" id="xmax">
+                        <label for="ymax">yMax:</label>
+                        <input type="text" placeholder="2" value="2" id="ymax">
+                        <input class="button-primary" type="submit" value="Change">
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

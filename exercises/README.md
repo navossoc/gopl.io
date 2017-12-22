@@ -57,3 +57,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 3.7:** Outro fractal simples usa o método de Newton para encontrar soluções complexas a uma função como z⁴-1 = 0. Sombreie cada ponto de partida de acordo com o número de iterações necessárias para se aproximar de uma das quatro raízes. Pinte cada ponto segundo a raiz da qual ele se aproxima.
 
 **Exercício 3.8:** Renderizar fractais com níveis altos de zoom exige alta precisão aritmética. Implemente o mesmo fractal usando quatro representações numéricas diferentes: `complex64`, `complex128`, `big.Float` e `big.Rat`. (Os dois últimos tipos encontram-se no pacote `math/big`. `Float` usa números de ponto flutuante quaisquer, porém com precisão limitada; `Rat` usa números racionais com precisão ilimitada.) Como eles se comparam quanto ao desempenho e ao uso de memória? Em que níveis de zoom os artefatos de renderização tornam-se visíveis?
+
+**Exercício 3.9:** Escreva um servidor web que renderize fractais e escreva os dados da imagem ao cliente. Permita que o cliente especifique os valores de x, y e de zoom como parâmetros da requisição HTTP.
