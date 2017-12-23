@@ -61,3 +61,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 3.9:** Escreva um servidor web que renderize fractais e escreva os dados da imagem ao cliente. Permita que o cliente especifique os valores de x, y e de zoom como parâmetros da requisição HTTP.
 
 **Exercício 3.10:** Escreva uma versão não recursiva de `comma` usando `bytes.Buffer` no lugar de concatenação de strings.
+
+**Exercício 3.11:** Melhore `comma` de modo que ela trate corretamente números de ponto flutuante e um sinal opcional.
