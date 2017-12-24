@@ -65,3 +65,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 3.11:** Melhore `comma` de modo que ela trate corretamente números de ponto flutuante e um sinal opcional.
 
 **Exercício 3.12:** Escreva uma função que informe se duas strings são anagramas uma da outra, isto é, se eles contêm as mesmas letras em ordem diferente.
+
+**Exercício 3.13:** Escreva declarações `const` para KB, MB, até YB, da forma mais compacta que você puder.
