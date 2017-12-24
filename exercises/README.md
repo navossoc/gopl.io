@@ -77,3 +77,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 4.3:** Reescreva `reverse` usando um ponteiro de array no lugar de uma fatia.
 
 **Exercício 4.4:** Escreva uma versão de `rotate` que funcione com um único passo.
+
+**Exercício 4.5:** Escreva uma função in-place para eliminar duplicatas adjacentes em uma fatia `[]string`.
