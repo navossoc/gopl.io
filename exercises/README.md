@@ -71,3 +71,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 ----------
 
 **Exercício 4.1:** Escreva uma função que conte o número de bits diferentes em dois hashes SHA256. (Veja `PopCount` na seção 2.6.2.)
+
+**Exercício 4.2:** Escreva um programa que exiba o hash SHA256 de sua entrada-padrão por default, mas aceite uma flag de linha de comando para exibir o hash SHA384 ou SHA512 em seu lugar.
