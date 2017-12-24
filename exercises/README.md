@@ -67,3 +67,7 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 3.12:** Escreva uma função que informe se duas strings são anagramas uma da outra, isto é, se eles contêm as mesmas letras em ordem diferente.
 
 **Exercício 3.13:** Escreva declarações `const` para KB, MB, até YB, da forma mais compacta que você puder.
+
+----------
+
+**Exercício 4.1:** Escreva uma função que conte o número de bits diferentes em dois hashes SHA256. (Veja `PopCount` na seção 2.6.2.)
