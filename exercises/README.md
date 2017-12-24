@@ -63,3 +63,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 3.10:** Escreva uma versão não recursiva de `comma` usando `bytes.Buffer` no lugar de concatenação de strings.
 
 **Exercício 3.11:** Melhore `comma` de modo que ela trate corretamente números de ponto flutuante e um sinal opcional.
+
+**Exercício 3.12:** Escreva uma função que informe se duas strings são anagramas uma da outra, isto é, se eles contêm as mesmas letras em ordem diferente.
