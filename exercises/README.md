@@ -75,3 +75,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 4.2:** Escreva um programa que exiba o hash SHA256 de sua entrada-padrão por default, mas aceite uma flag de linha de comando para exibir o hash SHA384 ou SHA512 em seu lugar.
 
 **Exercício 4.3:** Reescreva `reverse` usando um ponteiro de array no lugar de uma fatia.
+
+**Exercício 4.4:** Escreva uma versão de `rotate` que funcione com um único passo.
