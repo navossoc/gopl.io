@@ -81,3 +81,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 4.5:** Escreva uma função in-place para eliminar duplicatas adjacentes em uma fatia `[]string`.
 
 **Exercício 4.6:** Escreva uma função in-place que transforme toda sequência de espaços Unicode adjacentes (veja `unicode.IsSpace`) de uma fatia `[]byte` codificada em UTF-8 em um único espaço ASCII.
+
+**Exercício 4.7:** Modifique `reverse` para inverter os caracteres de uma fatia `[]byte` que representa uma string codificada em UTF-8, in-place. Você é capaz de fazer isso sem alocar uma nova memória?
