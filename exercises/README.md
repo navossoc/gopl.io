@@ -87,3 +87,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 4.8:** Modifique `charcount` para contar letras, dígitos e assim por diante de acordo com suas categorias Unicode, usando funções como `unicode.IsLetter`.
 
 **Exercício 4.9:** Escreva um programa `wordfreq` para informar a frequência de cada palavra em um arquivo-texto de entrada. Chame `input.Split(bufio.ScanWords)` antes da primeira chamada a `Scan` para separar a entrada em palavras, e não em linhas.
+
+**Exercício 4.10:** Modifique `issues` para informar os resultados em termos de idade, por exemplo, menos de um mês, menos de um ano e mais de um ano.
