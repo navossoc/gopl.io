@@ -85,3 +85,5 @@ w.Header().Set("Content-Type", "image/svg+xml")
 **Exercício 4.7:** Modifique `reverse` para inverter os caracteres de uma fatia `[]byte` que representa uma string codificada em UTF-8, in-place. Você é capaz de fazer isso sem alocar uma nova memória?
 
 **Exercício 4.8:** Modifique `charcount` para contar letras, dígitos e assim por diante de acordo com suas categorias Unicode, usando funções como `unicode.IsLetter`.
+
+**Exercício 4.9:** Escreva um programa `wordfreq` para informar a frequência de cada palavra em um arquivo-texto de entrada. Chame `input.Split(bufio.ScanWords)` antes da primeira chamada a `Scan` para separar a entrada em palavras, e não em linhas.
