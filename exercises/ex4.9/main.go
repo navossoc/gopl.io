@@ -21,11 +21,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	for i, arg := range os.Args {
-		if i == 0 {
-			continue
-		}
-
+	for _, arg := range os.Args[1:] {
 		func() {
 			f, err := os.Open(arg)
 			if err != nil {
